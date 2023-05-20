@@ -1,0 +1,332 @@
+@import './bootstrap.min.css';
+@import './elements.css';
+@import './icofont.css';
+
+@import './swiper.min.css';
+@import './animate.css';
+@import './slick.css';
+@import './style.css';
+@import './magnific-popup.css';
+@import './responsive.css';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+input {
+    height: 45px;
+    width: 100%;
+    color: #3b5983;
+    font-size: 14px;
+    line-height: 16px;
+    border: 2px solid #e9f2ff;
+    border-radius: 5px;
+    padding-left: 25px;
+}
+input:focus {
+    outline: none;
+    border: 2px solid #c1d9fd;
+}
+input:valid {
+    border-color: greenyellow;
+}
+input:invalid {
+    border-color: orange;
+}
+input:not(:focus):invalid {
+    border-color: #c1d9fd;
+}
+main {
+background : #e5e8ebbd;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    position: absolute;
+    z-index: 1;
+    width: 2534px;
+    height: 2534px;
+    border-radius: 50%;
+    background: #f7faff;
+    box-shadow: 0 4px 70px 6px rgba(217, 229, 255, 0.25);
+    animation-name: fadeCircle;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeCircle {
+    0% {
+        width: 2534px;
+        height: 2534px;
+    }
+    25% {
+        width: 2000px;
+        height: 2000px;
+    }
+    50% {
+        width: 1500px;
+        height: 1500px;
+    }
+    75% {
+        width: 1000px;
+        height: 1000px;
+    }
+    100% {
+        width: 534px;
+        height: 534px;
+    }
+}
+.register-form-container {
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+    max-width: 415px;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 6px 50px rgba(217, 229, 255, 0.7);
+    border-radius: 20px;
+    padding: 38px 30px;
+    animation-name: fadeForm;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeForm {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.form-title {
+    color: #30507d;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 38px;
+}
+.form-field {
+    margin-bottom: 13px;
+}
+.button {
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    height: 45px;
+    background: #247fff;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    border: none;
+}
+.button:hover {
+    background-color: #0d6cf2;
+}
+a.button {
+    text-decoration: none;
+}
+.button-google {
+    color: #c6cfdc;
+    background: #f2f6ff;
+}
+.button-google:hover {
+    background: #e2e6f0;
+    color: #fff;
+}
+.divider {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #405d87;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+.footer-section {
+background: #0b426e;
+
+    position: relative;
+}
+.footer-cta {
+    border-bottom: 1px solid #373636;
+}
+.single-cta i {
+    color: #ff5e14;
+    font-size: 30px;
+    float: left;
+    margin-top: 8px;
+}
+.cta-text {
+    padding-left: 15px;
+    display: inline-block;
+}
+.cta-text h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.cta-text span {
+    color: #757575;
+    font-size: 15px;
+}
+.footer-content {
+    position: relative;
+    z-index: 2;
+}
+.footer-pattern img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 330px;
+    background-size: cover;
+    background-position: 100% 100%;
+}
+.footer-logo {
+    margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #7e7e7e;
+    line-height: 28px;
+}
+.footer-social-icon span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+.footer-social-icon a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 15px;
+}
+.footer-social-icon i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+}
+.facebook-bg {
+    background: #3B5998;
+}
+.twitter-bg {
+    background: #55ACEE;
+}
+.google-bg {
+    background: #DD4B39;
+}
+.footer-widget-heading h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+}
+.footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 50px;
+    background: #ff5e14;
+}
+.footer-widget ul li {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    margin-bottom: 12px;
+}
+.footer-widget ul li a:hover {
+    color: #ff5e14;
+}
+.footer-widget ul li a {
+    color: #878787;
+    text-transform: capitalize;
+}
+.subscribe-form {
+    position: relative;
+    overflow: hidden;
+}
+.subscribe-form input {
+    width: 100%;
+    padding: 14px 28px;
+    background: #2E2E2E;
+    border: 1px solid #2E2E2E;
+    color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+    color: #fff;
+    font-size: 22px;
+    transform: rotate(-6deg);
+}
+.copyright-area {
+    background: #202020;
+    padding: 25px 0;
+}
+.copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #878787;
+}
+.copyright-text p a {
+    color: #ff5e14;
+}
+.footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+.footer-menu li:hover a {
+    color: #ff5e14;
+}
+.footer-menu li a {
+    font-size: 14px;
+    color: #878787;
+}
